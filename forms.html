@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Intro to Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Form Basics</h1>
+    <form onsubmit="alert('form submitted')">
+      <input type="text" placeholder="Search" />
+      <input type="submit" value="Submit" />
+    </form>
+    <button onclick="console.log('Reg button click')">Regular Button</button>
+    <h1>Intermediate Forms</h1>
+    <form>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <select>
+        <option>opt 1</option>
+        <option>opt 2</option>
+        <option>opt 3</option>
+      </select>
+    </form>
+    <form>
+      <input type="radio" value="radio1" id="radio1" />
+      <label for="radio1">radio1</label> <br />
+      <input type="radio" value="radio2" id="radio2" />
+      <label for="radio2">radio2</label> <br />
+      <input type="radio" value="radio3" id="radio3" />
+      <label for="radio3">radio3</label>
+      <input type="submit" value="Submit" aria-describedby="radio-submit" />
+    </form>
+    <div id="radio-submit" style="visibility: hidden">
+      <h2>Description for submit button</h2>
+      <p>Pressing submit button will confirm your selection for radio inputs</p>
+    </div>
+  </body>
+</html>
